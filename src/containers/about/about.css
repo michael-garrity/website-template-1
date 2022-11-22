@@ -1,0 +1,131 @@
+.main__about-wrapper {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.main__about {
+    display: flex;
+    flex-direction: column;
+    color: #e7e7e7;
+    font-family: var(--font-family);
+}
+
+.main__about-feature {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__about-feature div {
+    width: 38px;
+    height: 3px;
+    background: #e7e7e7;
+    margin-bottom: 0.25rem;
+}
+
+.main__about-feature h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #e7e7e7;
+}
+
+.main__about-feature p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 1rem;
+    color: #e7e7e7;
+    max-width: 900px;
+}
+
+.main__about-feature .main__features-container__feature {
+    margin: 0;
+}
+
+.main__about-feature .main__features-container__feature-text {
+    max-width: 900px;
+}
+
+.main__about-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.main__about-heading h1 {
+    font-size: 35px;
+    line-height: 45px;
+    max-width: 510px;
+    font-family: var(--font-family);
+}
+
+.main__about-heading p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.main__about-container {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.main__about-container .main__features-container__feature {
+    flex: 1;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .main__about-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .main__about-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .main__about-container .main__features-container__feature-title {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main__about-feature .main__features-container__feature {
+        flex-direction: column;
+    }
+
+    .main__about-feature .main__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .main__about-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .main__about-feature p {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main__about-container .main__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
